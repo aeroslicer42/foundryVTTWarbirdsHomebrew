@@ -1,0 +1,120 @@
+{
+  "id": "warbirds-homebrew",
+  "type": "module",
+  "title": "Warbirds — Table Homebrew",
+  "description": "The table's own material for the Warbirds — Jet Age system: 42 homebrew aircraft, the crunch document's ordnance, guns, personal gear and Modern Day Modifications, homebrew manoeuvres and the rules handouts. Kept in its own module so system updates never overwrite edits to these compendiums.",
+  "version": "0.6.0",
+  "authors": [
+    {
+      "name": "Aero"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14.359",
+    "verified": "14.368",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "warbirds",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.6.0"
+        },
+        "manifest": "https://github.com/aeroslicer42/foundryVTTWarbirds/releases/latest/download/system.json"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/warbirds-homebrew.mjs"
+  ],
+  "packs": [
+    {
+      "name": "homebrew-aircraft",
+      "label": "Aircraft (Homebrew)",
+      "path": "packs/homebrew-aircraft",
+      "type": "Actor",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "homebrew-weapons",
+      "label": "Weapons (Homebrew)",
+      "path": "packs/homebrew-weapons",
+      "type": "Item",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "homebrew-gear",
+      "label": "Gear (Homebrew)",
+      "path": "packs/homebrew-gear",
+      "type": "Item",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "homebrew-traits",
+      "label": "Traits (Homebrew)",
+      "path": "packs/homebrew-traits",
+      "type": "Item",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "homebrew-maneuvers",
+      "label": "Manoeuvres (Homebrew)",
+      "path": "packs/homebrew-maneuvers",
+      "type": "Item",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "homebrew-rules",
+      "label": "Rules (Homebrew)",
+      "path": "packs/homebrew-rules",
+      "type": "JournalEntry",
+      "system": "warbirds",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Warbirds (Homebrew)",
+      "sorting": "m",
+      "color": "#5a3a1e",
+      "packs": [
+        "homebrew-aircraft",
+        "homebrew-weapons",
+        "homebrew-gear",
+        "homebrew-traits",
+        "homebrew-maneuvers",
+        "homebrew-rules"
+      ]
+    }
+  ],
+  "url": "https://github.com/aeroslicer42/foundryVTTWarbirdsHomebrew",
+  "manifest": "https://github.com/aeroslicer42/foundryVTTWarbirdsHomebrew/releases/latest/download/module.json",
+  "download": "https://github.com/aeroslicer42/foundryVTTWarbirdsHomebrew/releases/download/0.6.0/warbirds-homebrew.zip",
+  "bugs": "https://github.com/aeroslicer42/foundryVTTWarbirdsHomebrew/issues",
+  "changelog": "https://github.com/aeroslicer42/foundryVTTWarbirdsHomebrew/blob/main/CHANGELOG.md"
+}
